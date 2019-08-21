@@ -1,0 +1,16 @@
+spring:
+  main:
+    web-application-type: NONE
+
+scraper:
+  to-scrape:
+    - "kita_verzeichnis"
+
+
+kita-verzeichnis:
+  base-url: "https://www.berlin.de/sen/jugend/familie-und-kinder/kindertagesbetreuung/kitas/verzeichnis"
+  link-path: "/ListeKitas.aspx?aktSuchbegriff="
+  kita-path: "/KitaDetailsNeu.aspx?ID=<ID>"
+
+csv:
+  output-directory: "./"
